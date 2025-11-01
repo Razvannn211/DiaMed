@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#titlu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+#calendar-container {
+  width: 350px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 coloane, una pentru fiecare zi */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #08361a; /* o linie de separare */
+}
+
+#calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* aceleași 7 coloane ca weekdays */
+  gap: 0px;
+}
+
+#calendar-days button {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+#lista-ore h4 {
+  margin-top: 10px;
+  color: #007bff;
+}
+
+#lista-ore div {
+  font-size: 14px;
+}
+#month-year {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  border: solid 2px black;
+  background-color: antiquewhite;
+  padding: 10px;
+  color: black;
+}

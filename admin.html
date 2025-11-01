@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <h1 id="titlu">Control admini</h1>
+    <div id="calendar-container">
+      <div id="calendar-header">
+        <button id="prev-month">&lt; Luna anterioară</button>
+        <span id="month-year"></span>
+        <button id="next-month">Luna următoare &gt;</button>
+      </div>
+      <div id="calendar-weekdays">
+        <!-- Numele zilelor vor fi generate aici -->
+      </div>
+      <div id="calendar-days">
+        <!-- Zilele lunii vor fi generate aici -->
+      </div>
+    </div>
+    <div
+      id="popup"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border: 2px solid #0d5d2b;
+        z-index: 1000;
+        width: 300px;
+      "
+    >
+      <h3 id="popup-title"></h3>
+      <label>Ore disponibile:</label>
+      <select id="slot-select"></select>
+      <br /><br />
+      <div id="lista-ore"></div>
+      <br /><br />
+      <button id="add-slot-btn">Adaugă slot</button>
+      <button id="close-popup">Închide</button>
+    </div>
+  </body>
+  <script src="app2.js" type="module"></script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programari</title>
+    <link rel="stylesheet" href="stil.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <h1 class="titlu">Diamed</h1>
+        <p class="subtitlu">Programari</p>
+      </div>
+      <div class="links-container">
+        <a href="#" class="homelink">Acasa</a>
+        <a href="#">Despre Noi</a>
+        <a href="#">Programari</a>
+        <a href="#">Blog</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+
+    <!-- Calendar utilizator -->
+    <div id="calendar-container">
+      <div id="calendar-header">
+        <button id="prev-month">&lt; Luna anterioară</button>
+        <span id="month-year"></span>
+        <button id="next-month">Luna următoare &gt;</button>
+      </div>
+      <div id="calendar-weekdays"></div>
+      <div id="calendar-days"></div>
+    </div>
+
+    <!-- Popup rezervare -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="close-popup" class="close">&times;</span>
+        <h3 id="popup-title"></h3>
+
+        <label>Ore disponibile:</label>
+        <select id="slot-select"></select>
+
+        <form id="rezervare-form">
+          <label for="fname">Nume și Prenume:</label>
+          <input
+            type="text"
+            id="fname"
+            placeholder="Ex: Ion Popescu"
+            required
+          />
+
+          <label for="femail">Adresă de email:</label>
+          <input
+            type="email"
+            id="femail"
+            placeholder="Ex: ion.popescu@email.com"
+            required
+          />
+
+          <label for="fphone">Telefon:</label>
+          <input
+            type="tel"
+            id="fphone"
+            placeholder="Ex: 0712345678"
+            pattern="[0-9]{10}"
+            required
+          />
+
+          <label for="fdesc">Descriere simptome (opțional):</label>
+          <textarea
+            id="fdesc"
+            rows="3"
+            placeholder="Descrie pe scurt simptomele..."
+          ></textarea>
+
+          <button type="button" id="reserve-slot-btn">Rezervă</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app3.js" type="module"></script>
+  </body>
+</html>
